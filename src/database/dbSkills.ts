@@ -1,5 +1,26 @@
 import { ISkill } from '../models/ISkill';
 
+export enum ESkills {
+  Athletics = 'ski01',
+  Acrobatics = 'ski02',
+  SleightOfHand = 'ski03',
+  Stealth = 'ski04',
+  Arcana = 'ski05',
+  History = 'ski06',
+  Investigation = 'ski07',
+  Nature = 'ski08',
+  Religion = 'ski09',
+  AnimalHandling = 'ski10',
+  Insight = 'ski11',
+  Medicine = 'ski12',
+  Perception = 'ski13',
+  Survival = 'ski14',
+  Deception = 'ski15',
+  Intimidation = 'ski16',
+  Performance = 'ski17',
+  Persuasion = 'ski18',
+}
+
 export const skills: ISkill[] = [
   {
     skillId: 'ski01',
