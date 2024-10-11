@@ -6,7 +6,7 @@ export interface ICharClass {
   charClassId: string;
   name: string;
   desc: string;
-  imgUrl: string;
+  imgSrc: string;
   subclassAtLevel: number;
   subclasses: ESubClasses[];
   expertiseAtLevel?: number;

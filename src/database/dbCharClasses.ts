@@ -8,7 +8,7 @@ export const charClasses: ICharClass[] = [
     charClassId: 'ccl01',
     name: 'Barbarian',
     desc: `The strong embrace the wild that hides inside - keen instincts, primal physicality, and most of all, an unbridled, unquenchable rage.`,
-    imgUrl: './icons/charClasses/Barbarian_Icon.png',
+    imgSrc: './icons/charClasses/Barbarian_Icon.png',
     subclassAtLevel: 3,
     subclasses: [
       ESubClasses.Berserker,
@@ -35,7 +35,7 @@ export const charClasses: ICharClass[] = [
     charClassId: 'ccl02',
     name: 'Bard',
     desc: `Bards know music is more than idle fancy - it is power. Through study and adventure, these travelling troubadours master song, speech, and the magic within.`,
-    imgUrl: './icons/charClasses/Bard_Icon.png',
+    imgSrc: './icons/charClasses/Bard_Icon.png',
     subclassAtLevel: 3,
     subclasses: [ESubClasses.Lore, ESubClasses.Valour, ESubClasses.Swords],
     expertiseAtLevel: 3,
@@ -74,7 +74,7 @@ export const charClasses: ICharClass[] = [
     charClassId: 'ccl03',
     name: 'Cleric',
     desc: `Clerics are representatives of the gods they worship, wielding potent divine magic for good or ill`,
-    imgUrl: './icons/charClasses/Cleric_Icon.png',
+    imgSrc: './icons/charClasses/Cleric_Icon.png',
     subclassAtLevel: 1,
     subclasses: [
       ESubClasses.Life,
@@ -108,7 +108,7 @@ export const charClasses: ICharClass[] = [
     charClassId: 'ccl04',
     name: 'Druid',
     desc: `Druids channel the elemental forces of nature and share a deep kinship with animals. Mastery of Wild Shape allows them to transform into beasts from all over the Realms.`,
-    imgUrl: './icons/charClasses/Druid_Icon.png',
+    imgSrc: './icons/charClasses/Druid_Icon.png',
     subclassAtLevel: 2,
     subclasses: [ESubClasses.Land, ESubClasses.Moon, ESubClasses.Spores],
     skillProficiencies: [
@@ -142,7 +142,7 @@ export const charClasses: ICharClass[] = [
     charClassId: 'ccl05',
     name: 'Fighter',
     desc: `Fighters have mastered the art of combat, wielding weapons with unmatched skill and wearing armour like a second skin.`,
-    imgUrl: './icons/charClasses/Fighter_Icon.png',
+    imgSrc: './icons/charClasses/Fighter_Icon.png',
     subclassAtLevel: 3,
     subclasses: [
       ESubClasses.BattleMaster,
@@ -172,7 +172,7 @@ export const charClasses: ICharClass[] = [
     charClassId: 'ccl06',
     name: 'Monk',
     desc: `Some reach enlightenment by languid meditation - others do so in the heat of battle. Monks manipulate ki to empower their own strikes and debilitate their foes.`,
-    imgUrl: './icons/charClasses/Monk_Icon.png',
+    imgSrc: './icons/charClasses/Monk_Icon.png',
     subclassAtLevel: 3,
     subclasses: [
       ESubClasses.FourElements,
@@ -195,7 +195,7 @@ export const charClasses: ICharClass[] = [
     charClassId: 'ccl07',
     name: 'Paladin',
     desc: `A promise made so deeply that it becomes divine in itself flows through a paladin, burning bright enough to inspire allies and smite foes.`,
-    imgUrl: './icons/charClasses/Paladin_Icon.png',
+    imgSrc: './icons/charClasses/Paladin_Icon.png',
     subclassAtLevel: 1,
     subclasses: [
       ESubClasses.Ancients,
@@ -224,7 +224,7 @@ export const charClasses: ICharClass[] = [
     charClassId: 'ccl08',
     name: 'Ranger',
     desc: `Rangers are unrivalled scouts and trackers, honing a deep connection with nature in order to hunt their favoured prey.`,
-    imgUrl: './icons/charClasses/Ranger_Icon.png',
+    imgSrc: './icons/charClasses/Ranger_Icon.png',
     subclassAtLevel: 3,
     subclasses: [
       ESubClasses.Hunter,
@@ -253,7 +253,7 @@ export const charClasses: ICharClass[] = [
     charClassId: 'ccl09',
     name: 'Rogue',
     desc: `With stealth, skill, and uncanny reflexes, rogues' versatility lets them get the upper hand in almost any situation.`,
-    imgUrl: './icons/charClasses/Rogue_Icon.png',
+    imgSrc: './icons/charClasses/Rogue_Icon.png',
     subclassAtLevel: 3,
     subclasses: [
       ESubClasses.Thief,
@@ -288,7 +288,7 @@ export const charClasses: ICharClass[] = [
     charClassId: 'ccl10',
     name: 'Sorcerer',
     desc: `Sorcerers are natural spellcasters, drawing on inherent magic from a gift or bloodline.`,
-    imgUrl: './icons/charClasses/Sorcerer_Icon.png',
+    imgSrc: './icons/charClasses/Sorcerer_Icon.png',
     subclassAtLevel: 1,
     subclasses: [
       ESubClasses.WildMagicSorc,
@@ -315,7 +315,7 @@ export const charClasses: ICharClass[] = [
     charClassId: 'ccl11',
     name: 'Warlock',
     desc: `Bound by a pact to an all-powerful patron, warlocks trade their loyalty for supernatural abilities and unique magic.`,
-    imgUrl: './icons/charClasses/Warlock_Icon.png',
+    imgSrc: './icons/charClasses/Warlock_Icon.png',
     subclassAtLevel: 1,
     subclasses: [
       ESubClasses.Fiend,
@@ -339,7 +339,7 @@ export const charClasses: ICharClass[] = [
     charClassId: 'ccl12',
     name: 'Wizard',
     desc: `Wizards master the arcane by specialising in individual schools of magic, combining ancient spells with modern research.`,
-    imgUrl: './icons/charClasses/Wizard_Icon.png',
+    imgSrc: './icons/charClasses/Wizard_Icon.png',
     subclassAtLevel: 2,
     subclasses: [
       ESubClasses.Abjuration,

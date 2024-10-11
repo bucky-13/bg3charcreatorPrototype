@@ -2,6 +2,6 @@ export interface ISpell {
   spellId: string;
   name: string;
   desc: string;
-  imgUrl: string;
+  imgSrc: string;
   spellLevel: number;
 }

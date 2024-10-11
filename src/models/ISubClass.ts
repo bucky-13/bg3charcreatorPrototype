@@ -7,7 +7,7 @@ export interface ISubClass {
   subClassId: string;
   name: string;
   desc: string;
-  imgUrl: string;
+  imgSrc: string;
   skillProficiencies?: ESkills[];
   skillProficiencySlots?: number;
   armorProficiencies?: EEquipment[];

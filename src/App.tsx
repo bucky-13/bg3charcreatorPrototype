@@ -9,6 +9,7 @@ function App() {
       <div>
         <div>
           <p>{charClasses[0].subclasses[1]}</p>
+          <img src={charClasses[7].imgSrc}></img>
           <h2>{charBackgrounds[0].name}</h2>
           <img src={charBackgrounds[0].imgSrc}></img>
           <p>{charBackgrounds[0].desc}</p>
