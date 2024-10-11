@@ -1,6 +1,7 @@
 import { ICharClass } from '../models/ICharClass';
 import { EEquipment } from './dbEquipmentProficiencies';
 import { ESkills } from './dbSkills';
+import { ESubClasses } from './dbSubClass';
 
 export const charClasses: ICharClass[] = [
   {
@@ -9,7 +10,11 @@ export const charClasses: ICharClass[] = [
     desc: `The strong embrace the wild that hides inside - keen instincts, primal physicality, and most of all, an unbridled, unquenchable rage.`,
     imgUrl: './icons/charClasses/Barbarian_Icon.png',
     subclassAtLevel: 3,
-    subclasses: [''],
+    subclasses: [
+      ESubClasses.Berserker,
+      ESubClasses.WildMagicBarb,
+      ESubClasses.Wildheart,
+    ],
     skillProficiencies: [
       ESkills.AnimalHandling,
       ESkills.Athletics,
@@ -32,7 +37,7 @@ export const charClasses: ICharClass[] = [
     desc: `Bards know music is more than idle fancy - it is power. Through study and adventure, these travelling troubadours master song, speech, and the magic within.`,
     imgUrl: './icons/charClasses/Bard_Icon.png',
     subclassAtLevel: 3,
-    subclasses: [''],
+    subclasses: [ESubClasses.Lore, ESubClasses.Valour, ESubClasses.Swords],
     expertiseAtLevel: 3,
     expertiseSlots: 2,
     skillProficiencies: [
@@ -71,7 +76,15 @@ export const charClasses: ICharClass[] = [
     desc: `Clerics are representatives of the gods they worship, wielding potent divine magic for good or ill`,
     imgUrl: './icons/charClasses/Cleric_Icon.png',
     subclassAtLevel: 1,
-    subclasses: [''],
+    subclasses: [
+      ESubClasses.Life,
+      ESubClasses.Light,
+      ESubClasses.Trickery,
+      ESubClasses.Knowledge,
+      ESubClasses.Nature,
+      ESubClasses.Tempest,
+      ESubClasses.War,
+    ],
     skillProficiencies: [
       ESkills.History,
       ESkills.Insight,
@@ -97,7 +110,7 @@ export const charClasses: ICharClass[] = [
     desc: `Druids channel the elemental forces of nature and share a deep kinship with animals. Mastery of Wild Shape allows them to transform into beasts from all over the Realms.`,
     imgUrl: './icons/charClasses/Druid_Icon.png',
     subclassAtLevel: 2,
-    subclasses: [''],
+    subclasses: [ESubClasses.Land, ESubClasses.Moon, ESubClasses.Spores],
     skillProficiencies: [
       ESkills.Arcana,
       ESkills.AnimalHandling,
@@ -131,7 +144,11 @@ export const charClasses: ICharClass[] = [
     desc: `Fighters have mastered the art of combat, wielding weapons with unmatched skill and wearing armour like a second skin.`,
     imgUrl: './icons/charClasses/Fighter_Icon.png',
     subclassAtLevel: 3,
-    subclasses: [''],
+    subclasses: [
+      ESubClasses.BattleMaster,
+      ESubClasses.EldritchKnight,
+      ESubClasses.Champion,
+    ],
     skillProficiencies: [
       ESkills.Acrobatics,
       ESkills.AnimalHandling,
@@ -157,7 +174,11 @@ export const charClasses: ICharClass[] = [
     desc: `Some reach enlightenment by languid meditation - others do so in the heat of battle. Monks manipulate ki to empower their own strikes and debilitate their foes.`,
     imgUrl: './icons/charClasses/Monk_Icon.png',
     subclassAtLevel: 3,
-    subclasses: [''],
+    subclasses: [
+      ESubClasses.FourElements,
+      ESubClasses.OpenHand,
+      ESubClasses.Shadow,
+    ],
     skillProficiencies: [
       ESkills.Acrobatics,
       ESkills.Athletics,
@@ -176,7 +197,12 @@ export const charClasses: ICharClass[] = [
     desc: `A promise made so deeply that it becomes divine in itself flows through a paladin, burning bright enough to inspire allies and smite foes.`,
     imgUrl: './icons/charClasses/Paladin_Icon.png',
     subclassAtLevel: 1,
-    subclasses: [''],
+    subclasses: [
+      ESubClasses.Ancients,
+      ESubClasses.Devotion,
+      ESubClasses.Vengeance,
+      ESubClasses.Oathbreaker,
+    ],
     skillProficiencies: [
       ESkills.Athletics,
       ESkills.Insight,
@@ -200,7 +226,11 @@ export const charClasses: ICharClass[] = [
     desc: `Rangers are unrivalled scouts and trackers, honing a deep connection with nature in order to hunt their favoured prey.`,
     imgUrl: './icons/charClasses/Ranger_Icon.png',
     subclassAtLevel: 3,
-    subclasses: [''],
+    subclasses: [
+      ESubClasses.Hunter,
+      ESubClasses.BeastMaster,
+      ESubClasses.GloomStalker,
+    ],
     skillProficiencies: [
       ESkills.AnimalHandling,
       ESkills.Athletics,
@@ -225,7 +255,11 @@ export const charClasses: ICharClass[] = [
     desc: `With stealth, skill, and uncanny reflexes, rogues' versatility lets them get the upper hand in almost any situation.`,
     imgUrl: './icons/charClasses/Rogue_Icon.png',
     subclassAtLevel: 3,
-    subclasses: [''],
+    subclasses: [
+      ESubClasses.Thief,
+      ESubClasses.ArcaneTrickster,
+      ESubClasses.Assassin,
+    ],
     expertiseAtLevel: 1,
     expertiseSlots: 2,
     skillProficiencies: [
@@ -256,7 +290,11 @@ export const charClasses: ICharClass[] = [
     desc: `Sorcerers are natural spellcasters, drawing on inherent magic from a gift or bloodline.`,
     imgUrl: './icons/charClasses/Sorcerer_Icon.png',
     subclassAtLevel: 1,
-    subclasses: [''],
+    subclasses: [
+      ESubClasses.WildMagicSorc,
+      ESubClasses.Draconic,
+      ESubClasses.StormSorcery,
+    ],
     skillProficiencies: [
       ESkills.Arcana,
       ESkills.Deception,
@@ -279,7 +317,11 @@ export const charClasses: ICharClass[] = [
     desc: `Bound by a pact to an all-powerful patron, warlocks trade their loyalty for supernatural abilities and unique magic.`,
     imgUrl: './icons/charClasses/Warlock_Icon.png',
     subclassAtLevel: 1,
-    subclasses: [''],
+    subclasses: [
+      ESubClasses.Fiend,
+      ESubClasses.GreatOldOne,
+      ESubClasses.Archfey,
+    ],
     skillProficiencies: [
       ESkills.Arcana,
       ESkills.Deception,
@@ -299,7 +341,17 @@ export const charClasses: ICharClass[] = [
     desc: `Wizards master the arcane by specialising in individual schools of magic, combining ancient spells with modern research.`,
     imgUrl: './icons/charClasses/Wizard_Icon.png',
     subclassAtLevel: 2,
-    subclasses: [''],
+    subclasses: [
+      ESubClasses.Abjuration,
+      ESubClasses.Evocation,
+      ESubClasses.Necromancy,
+      ESubClasses.Conjuration,
+      ESubClasses.Enchantment,
+      ESubClasses.Divination,
+      ESubClasses.Divination,
+      ESubClasses.Illusion,
+      ESubClasses.Transmutation,
+    ],
     skillProficiencies: [
       ESkills.Arcana,
       ESkills.History,

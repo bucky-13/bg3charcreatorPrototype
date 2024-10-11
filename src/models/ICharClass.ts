@@ -1,5 +1,6 @@
 import { EEquipment } from '../database/dbEquipmentProficiencies';
 import { ESkills } from '../database/dbSkills';
+import { ESubClasses } from '../database/dbSubClass';
 
 export interface ICharClass {
   charClassId: string;
@@ -7,7 +8,7 @@ export interface ICharClass {
   desc: string;
   imgUrl: string;
   subclassAtLevel: number;
-  subclasses: string[];
+  subclasses: ESubClasses[];
   expertiseAtLevel?: number;
   expertiseSlots?: number;
   skillProficiencies: ESkills[];

@@ -1,12 +1,14 @@
 import './App.css';
 import { abilities } from './database/dbAbilities';
 import { charBackgrounds } from './database/dbCharBackgrounds';
+import { charClasses } from './database/dbCharClasses';
 
 function App() {
   return (
     <>
       <div>
         <div>
+          <p>{charClasses[0].subclasses[1]}</p>
           <h2>{charBackgrounds[0].name}</h2>
           <img src={charBackgrounds[0].imgSrc}></img>
           <p>{charBackgrounds[0].desc}</p>

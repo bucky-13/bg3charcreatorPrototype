@@ -1,8 +1,9 @@
 import { EEquipment } from '../database/dbEquipmentProficiencies';
 import { ESkills } from '../database/dbSkills';
+import { ISpecialSkills } from './ISpecialSkills';
 import { ISpell } from './ISpell';
 
-export interface ICharClass {
+export interface ISubClass {
   subClassId: string;
   name: string;
   desc: string;
@@ -11,12 +12,6 @@ export interface ICharClass {
   skillProficiencySlots?: number;
   armorProficiencies?: EEquipment[];
   weaponProficiencies?: EEquipment[];
-  spells: ISpell[];
+  spells?: ISpell[];
   specialSkills: ISpecialSkills[];
-}
-
-export interface ISpecialSkills {
-  sSkillsId: string;
-  atLevel: number;
-  desc: string;
 }
